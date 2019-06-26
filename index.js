@@ -17,7 +17,7 @@ class Driver {
   }
   
   passengers() {
-    trips().each
+    for trips().each
   }
 }
 
