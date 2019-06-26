@@ -34,11 +34,21 @@ class Passenger {
   }
   
   trips() {
-    
+    store.trips.filter(
+      function(trip) {
+        return trip.passengerId === this.id;
+      }.bind(this)
+    );
   }
   
   drivers() {
-    
+    const drivers = [];
+    this.trips().forEach(
+      function(trip) {
+        drivers.push(trip.driver());
+      }
+    );
+    return drivers;
   }
 }
 
