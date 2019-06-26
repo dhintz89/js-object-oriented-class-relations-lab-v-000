@@ -18,7 +18,9 @@ class Driver {
   
   passengers() {
     const passengers = [];
-    trips().forEach(function(trip)
+    trips().forEach(function(trip) {
+      
+    }
       )
     for (let trip of trips()) {
       trip += 1;
