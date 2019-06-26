@@ -43,11 +43,9 @@ class Passenger {
   
   drivers() {
     const drivers = [];
-    this.trips().forEach(
-      function(trip) {
+    this.trips().forEach(function(trip) {
         drivers.push(trip.driver());
-      }
-    );
+    });
     return drivers;
   }
 }
