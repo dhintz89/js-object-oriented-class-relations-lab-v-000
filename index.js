@@ -1,4 +1,4 @@
-let store = {drivers: [], passengers: []};
+let store = {drivers: [], passengers: [], trips: []};
 
 let driverId = 0;
 class Driver {
@@ -9,7 +9,11 @@ class Driver {
   }
   
   trips() {
-    
+    store.trips.filter {
+      function (trip) {
+        return trip.id === this.id;
+      }.bind(this);
+    }
   }
   
   passengers() {
@@ -37,8 +41,10 @@ class Passenger {
 let tripId = 0;
 class Trip {
   constructor(driver, passenger) {
+    this.id = ++tripId;
     this.driverId = driver.id;
     this.passengerId = passenger.id;
+    store.trips.push(this);
   }
   
   driver() {
