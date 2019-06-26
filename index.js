@@ -13,7 +13,7 @@ class Driver {
       function (trip) {
         return trip.id === this.id;
       }.bind(this);
-    )
+    );
   }
   
   passengers() {
