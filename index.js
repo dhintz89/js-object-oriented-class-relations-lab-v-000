@@ -20,7 +20,7 @@ class Driver {
     const passengers = [];
     for (let trip of trips()) {
       trip ++;
-      passengers.push(trip)
+      passengers.push(trip.passenger());
     }
   }
 }
@@ -56,6 +56,6 @@ class Trip {
   }
   
   passenger() {
-    return this.passenger;
+    return store.passengers.find(
   }
 }
