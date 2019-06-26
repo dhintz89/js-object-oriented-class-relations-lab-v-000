@@ -1,3 +1,3 @@
 let store = {driver: [], passenger: []};
 
-class
+class Driver
