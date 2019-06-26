@@ -9,11 +9,11 @@ class Driver {
   }
   
   trips() {
-    return store.trips.filter {
+    return store.trips.filter (
       function (trip) {
         return trip.id === this.id;
       }.bind(this);
-    }
+    )
   }
   
   passengers() {
