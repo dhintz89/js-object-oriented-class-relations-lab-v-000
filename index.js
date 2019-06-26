@@ -1,3 +1,6 @@
 let store = {driver: [], passenger: []};
 
-class Driver
+let id
+class Driver {
+  
+}
