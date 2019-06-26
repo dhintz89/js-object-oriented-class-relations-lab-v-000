@@ -22,6 +22,30 @@ class Passenger {
   constructor(name) {
     this.id = ++passengerId;
     this.name = name;
-    store.passengers.push(this)
+    store.passengers.push(this);
+  }
+  
+  trips() {
+    
+  }
+  
+  drivers() {
+    
+  }
+}
+
+let tripId = 0;
+class Trip {
+  constructor(driver, passenger) {
+    this.driver = driver.id;
+    this.passenger = passenger.id;
+  }
+  
+  driver() {
+    return this.driver;
+  }
+  
+  passenger() {
+    return this.passenger;
   }
 }
