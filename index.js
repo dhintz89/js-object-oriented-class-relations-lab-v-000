@@ -37,8 +37,8 @@ class Passenger {
 let tripId = 0;
 class Trip {
   constructor(driver, passenger) {
-    this.driver = driver.id;
-    this.passenger = passenger.id;
+    this.driverId = driver.id;
+    this.passengerId = passenger.id;
   }
   
   driver() {
