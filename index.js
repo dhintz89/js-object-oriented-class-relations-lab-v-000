@@ -18,14 +18,10 @@ class Driver {
   
   passengers() {
     const passengers = [];
-    trips().forEach(function(trip) {
-      
-    }
-      )
-    for (let trip of trips()) {
-      trip += 1;
+    this.trips().forEach(function(trip) {
       passengers.push(trip.passenger());
-    }
+    });
+    return passengers;
   }
 }
 
