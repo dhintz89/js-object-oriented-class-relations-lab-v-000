@@ -17,8 +17,10 @@ class Driver {
   }
   
   passengers() {
+    const passengers = [];
     for (let trip of trips()) {
       trip ++;
+      passengers.push(trip)
     }
   }
 }
