@@ -17,7 +17,7 @@ class Driver {
   }
   
   passengers() {
-    for (let trip of trips()
+    for (let trip of trips()) {
   }
 }
 
