@@ -1,1 +1,2 @@
-let store = {driver: [], passenger: []}}
+let store = {driver: [], passenger: []};
+
